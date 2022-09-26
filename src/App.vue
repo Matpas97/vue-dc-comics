@@ -1,36 +1,33 @@
 <template>
   <div id="app">
-    <MainHeader/>
-    <MainComponent/>
-    <FooterComponent/>
-
+    <HeaderComponent />
+    <MainComponent />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-import MainHeader from './components/MainHeader.vue';
-import FooterComponent from './components/FooterComponent.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
-
-
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    MainHeader,
+    HeaderComponent,
     MainComponent,
     FooterComponent,
-  }
-   
-   
-}
+  },
+};
 </script>
 
 <style lang="scss">
-@import './styles/generic.scss';
-@import './styles/variables.scss';
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
- 
+@import './styles/generic';
+@import './styles/variables';
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
 }
+
+
 </style>

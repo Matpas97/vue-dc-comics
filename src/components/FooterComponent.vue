@@ -1,46 +1,23 @@
-
-
-<!-- Template -->
 <template>
-    <div>
-    <ShopFooterContent/>
-    <InfoFooterContent/>
-    <LoginFooterContent/>
-
-
-    </div>
+  <div>
+    <ShopAreaComponent/>
+    <FooterLinksComponent/>
+    <SocialComponent />
+  </div>
 </template>
 
-
-<!-- Script -->
 <script>
-    import ShopFooterContent from './ShopFooterContent.vue';
-    import InfoFooterContent from './InfoFooterContent.vue';
-    import LoginFooterContent from './LoginFooterContent.vue';
-
-
-    export default {
-        name:'FooterComponent',
-        components: {
-    ShopFooterContent,
-    InfoFooterContent,
-    LoginFooterContent,
-   },
-      
-        };
-    
-
-
-
-
+import ShopAreaComponent from '@/components/ShopAreaComponent.vue';
+import FooterLinksComponent from '@/components/FooterLinksComponent.vue';
+import SocialComponent from '@/components/SocialComponent.vue';
+export default {
+  name: 'FooterComponent',
+  components: {
+    ShopAreaComponent,
+    FooterLinksComponent,
+    SocialComponent,
+  },
+};
 </script>
 
-
-<!-- Style -->
-<style lang="scss" scoped>
-
-
-
-
-
-</style>
+<style lang="scss" scoped></style>
